@@ -1,8 +1,14 @@
 #login
 
-usuario = input("Digite seu usuário: ")
-senha = input("Digite sua senha: ")
-if usuario == "Matheus" and senha == "matheus123":
-    print("Acesso concedido")
-else:
-    print("Acesso negado, usuário ou senha incorreto.")
+def login():
+    usuario = input("Digite seu usuário: ")
+    senha = input("Digite sua senha: ")
+
+    if usuario == 'Luis' and senha == "12345":
+        print("Acesso permitido")
+    else:
+        print("Acesso negado, usuario ou senha incorreto")
+
+while True:
+    if login():
+        break
